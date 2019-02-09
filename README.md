@@ -1,5 +1,7 @@
 # canihazusername
 
+Random username generator with buildt in typescript support.
+
 ## Install
 
 ```bash

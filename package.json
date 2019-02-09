@@ -1,6 +1,6 @@
 {
   "name": "canihazusername",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Username Generator",
   "main": "./lib/index.js",
   "types": "./lib/canihazusername.d.ts",
