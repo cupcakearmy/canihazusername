@@ -27,7 +27,7 @@ module.exports = {
     },
     plugins: [
         new DtsBundleWebpack({
-            name: 'index',
+            name: 'canihazusername',
             main: `./lib/index.d.ts`
         })
     ],
