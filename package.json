@@ -1,0 +1,36 @@
+{
+  "name": "canihazusername",
+  "version": "1.0.0",
+  "description": "Username Generator",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "dev": "webpack -d -w",
+    "build": "webpack -p",
+    "test": "mocha",
+    "prepublish": "npm run build && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CupCakeArmy/canihazusername.git"
+  },
+  "keywords": [
+    "UI"
+  ],
+  "author": "Niccolo Borgioli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CupCakeArmy/canihazusername/issues"
+  },
+  "homepage": "https://github.com/CupCakeArmy/canihazusername#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "dts-bundle": "^0.7.3",
+    "dts-bundle-webpack": "^1.0.2",
+    "mocha": "^5.2.0",
+    "typescript": "^3.2.4",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  }
+}
