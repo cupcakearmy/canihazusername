@@ -9,7 +9,7 @@ npm install --save canihazusername
 ## Quickstart
 
 ```jsx
-import cihu from 'aspekto'
+import cihu from 'canihazusername'
 
 console.log(cihu())
 ```
