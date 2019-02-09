@@ -1,9 +1,9 @@
 {
   "name": "canihazusername",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Username Generator",
   "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
+  "types": "./lib/canihazusername.d.ts",
   "scripts": {
     "dev": "webpack -d -w",
     "build": "webpack -p",
