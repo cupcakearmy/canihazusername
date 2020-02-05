@@ -1,21 +1,25 @@
 {
   "name": "canihazusername",
   "version": "1.0.3",
-  "description": "Username Generator",
+  "description": "username generator. typed, simple and customizable",
   "main": "./lib/index.js",
-  "types": "./lib/canihazusername.d.ts",
+  "types": "./lib/index.d.ts",
   "scripts": {
+    "generate": "git -C ./generate/wordlist pull && node ./generate/wordlist.js",
     "dev": "webpack -d -w",
     "build": "webpack -p",
     "test": "mocha",
-    "prepublish": "npm run build && npm run test"
+    "prepublishOnly": "npm run build && npm run test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CupCakeArmy/canihazusername.git"
   },
   "keywords": [
-    "UI"
+    "username",
+    "generator",
+    "types",
+    "customizable"
   ],
   "author": "Niccolo Borgioli",
   "license": "MIT",
@@ -25,12 +29,8 @@
   "homepage": "https://github.com/CupCakeArmy/canihazusername#readme",
   "dependencies": {},
   "devDependencies": {
-    "awesome-typescript-loader": "^5.2.1",
-    "dts-bundle": "^0.7.3",
-    "dts-bundle-webpack": "^1.0.2",
-    "mocha": "^5.2.0",
-    "typescript": "^3.2.4",
-    "webpack": "^4.29.0",
-    "webpack-cli": "^3.2.1"
+    "parcel-bundler": "^1.12.4",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "3.7"
   }
 }

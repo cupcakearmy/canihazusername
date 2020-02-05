@@ -1,21 +1,30 @@
 {
 	"compilerOptions": {
-		"outDir": "./lib",
 		"target": "es6",
 		"module": "commonjs",
+		"declaration": true,
+		"declarationMap": false,
+		"sourceMap": false,
+		"outDir": "./lib",
+		"rootDir": "./src",
+		"removeComments": true,
+		"strict": true,
 		"noImplicitAny": true,
 		"strictNullChecks": true,
-		"removeComments": true,
-		"declaration": true,
-		"sourceMap": true,
-		"noEmit": true,
-		"jsx": "react"
+		"strictFunctionTypes": true,
+		"strictBindCallApply": true,
+		"strictPropertyInitialization": true,
+		"noImplicitThis": true,
+		"alwaysStrict": true,
+		// "noUnusedLocals": true,
+		// "noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"forceConsistentCasingInFileNames": true
 	},
 	"include": [
-		"./src/**/*.tsx",
-		"./src/**/*.ts"
-	],
-	"exclude": [
-		"node_modules"
+		"./src"
 	]
 }

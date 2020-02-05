@@ -1,6 +1,14 @@
-node_modules/
-package-lock.json
+# Editors
+.vscode
 .idea
 
-test/bundle.js
+# Node
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build
 lib
+dist
+.cache
+src/*.js
