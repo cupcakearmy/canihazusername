@@ -1,14 +1,13 @@
 {
   "name": "canihazusername",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "username generator. typed, simple and customizable",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "scripts": {
     "generate": "git -C ./generate/wordlist pull && node ./generate/wordlist.js",
-    "dev": "webpack -d -w",
-    "build": "webpack -p",
-    "test": "mocha",
+    "docs": "rm -r ./docs && parcel build --no-source-maps -d ./docs ./website/index.html",
+    "build": "tsc",
     "prepublishOnly": "npm run build && npm run test"
   },
   "repository": {
@@ -27,7 +26,10 @@
     "url": "https://github.com/CupCakeArmy/canihazusername/issues"
   },
   "homepage": "https://github.com/CupCakeArmy/canihazusername#readme",
-  "dependencies": {},
+  "dependencies": {
+    "bulma": "^0.8.0",
+    "tachyons": "^4.11.1"
+  },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "ts-node-dev": "^1.0.0-pre.44",
