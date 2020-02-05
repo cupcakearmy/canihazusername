@@ -1,11 +1,11 @@
 # canihazusername
 
-Random username generator with buildt in typescript support.
+Username generator. Fully typed, simple and customizable
 
 ## Install
 
 ```bash
-npm install --save canihazusername
+yarn add canihazusername
 ```
 
 ## Quickstart
