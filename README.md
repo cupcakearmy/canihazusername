@@ -1,10 +1,8 @@
-# canihazusername
+![logo](./docs/logo.svg)
 
 Username generator. Fully typed, simple and customizable.
 
 The lists are taken from [this repo](https://github.com/imsky/wordlists) and automatically converted into json by `./generate/wordlist.js`
-
-![logo](./docs/logo.svg)
 
 ## 🕹 [Interactive Demo](https://cupcakearmy.github.io/canihazusername/)
 
