@@ -6,7 +6,7 @@
   "types": "./lib/index.d.ts",
   "scripts": {
     "generate": "git -C ./generate/wordlist pull && node ./generate/wordlist.js",
-    "docs": "rm -r ./docs && parcel build --no-source-maps -d ./docs ./website/index.html",
+    "docs": "rm -r ./docs && parcel build --no-source-maps --out-dir ./docs --public-url ./ ./website/index.html",
     "build": "tsc",
     "prepublishOnly": "npm run build && npm run test"
   },
