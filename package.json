@@ -26,12 +26,9 @@
     "url": "https://github.com/CupCakeArmy/canihazusername/issues"
   },
   "homepage": "https://github.com/CupCakeArmy/canihazusername#readme",
-  "dependencies": {
-    "bulma": "^0.8.0",
-    "tachyons": "^4.11.1"
-  },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
+    "tachyons": "^4.11.1",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "3.7"
   }
