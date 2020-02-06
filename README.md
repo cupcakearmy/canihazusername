@@ -4,7 +4,7 @@ Username generator. Fully typed, simple and customizable.
 
 The lists are taken from [this repo](https://github.com/imsky/wordlists) and automatically converted into json by `./generate/wordlist.js`
 
-Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+![logo](./docs/logo.svg)
 
 ## 🕹 [Interactive Demo](https://cupcakearmy.github.io/canihazusername/)
 
@@ -182,3 +182,8 @@ const username = generate('{age|cats|...}')
 - programming
 - thought
 - web
+
+## 🙏 Credits
+
+- Wordlist https://github.com/imsky/wordlists
+- Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
