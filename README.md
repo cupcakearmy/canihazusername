@@ -1,4 +1,4 @@
-![logo](./docs/logo.svg)
+![logo](./docs/logo.png)
 
 ![minzip size badge](https://badgen.net/bundlephobia/minzip/canihazusername) ![types badge](https://badgen.net/npm/types/canihazusername) ![version badge](https://badgen.net/npm/v/canihazusername)
 
