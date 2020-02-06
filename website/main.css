@@ -19,6 +19,7 @@ body {
 }
 
 #main > div {
+    width: 100%;
     max-width: 35em;
     margin: auto;
 }

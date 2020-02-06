@@ -6,12 +6,11 @@ const output = window.document.getElementById('username') as HTMLInputElement
 const list = window.document.getElementById('lists')
 const button = window.document.getElementById('button')
 
-const gen = () => {
+const calculate = () => {
     output.value = generate(input.value)
 }
 
-button.addEventListener('click', gen)
-button.addEventListener('touchstart', gen)
-
-gen()
+// Init
+button.addEventListener('click', calculate)
+calculate()
 list.innerHTML = showAvailableLists().join(', ')

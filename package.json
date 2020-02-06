@@ -7,7 +7,7 @@
   "scripts": {
     "generate": "git -C ./generate/wordlist pull && node ./generate/wordlist.js",
     "docs": "parcel build --no-source-maps --out-dir ./docs --public-url ./ ./website/index.html",
-    "build": "tsc",
+    "docs:dev": "parcel ./website/index.html",
     "prepublishOnly": "rm -rf ./lib && tsc"
   },
   "repository": {
@@ -31,5 +31,8 @@
     "tachyons": "^4.11.1",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "3.7"
+  },
+  "dependencies": {
+    "bulma": "^0.8.0"
   }
 }
