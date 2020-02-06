@@ -6,6 +6,8 @@ The lists are taken from [this repo](https://github.com/imsky/wordlists) and aut
 
 ## 🕹 [Interactive Demo](https://cupcakearmy.github.io/canihazusername/)
 
+Small website where you can see it in action and customize the output. https://cupcakearmy.github.io/canihazusername/
+
 ## 🏗 Install
 
 ```bash
