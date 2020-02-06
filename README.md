@@ -42,8 +42,10 @@ This will build a combined list and choose at random between all those words.
 ```typescript
 import { generate } from 'canihazusername'
 
-const username = generate('{age|cats|...}')
+const username = generate('{quantity|age|cats|}')
 ```
+
+This example will choose a random word between the `quantity`, `age` and `cats` list.
 
 ## 🗂 Lists
 
