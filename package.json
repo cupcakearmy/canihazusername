@@ -8,7 +8,7 @@
     "generate": "git -C ./generate/wordlist pull && node ./generate/wordlist.js",
     "docs": "parcel build --no-source-maps --out-dir ./docs --public-url ./ ./website/index.html",
     "build": "tsc",
-    "prepublishOnly": "npm run build && npm run test"
+    "prepublishOnly": "rm -rf ./lib && tsc"
   },
   "repository": {
     "type": "git",
