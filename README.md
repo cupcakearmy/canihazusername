@@ -1,6 +1,8 @@
 ![logo](./docs/logo.svg)
 
-Username generator. Fully typed, simple and customizable.
+![minzip size badge](https://badgen.net/bundlephobia/minzip/canihazusername) ![types badge](https://badgen.net/npm/types/canihazusername) ![version badge](https://badgen.net/npm/v/canihazusername)
+
+Username generator. Fully typed, simple and customizable. **0 Dependencies**
 
 The lists are taken from [this repo](https://github.com/imsky/wordlists) and automatically converted into json by `./generate/wordlist.js`
 
