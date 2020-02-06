@@ -2,11 +2,7 @@ import wordlist from './wordlist.json'
 
 const randomElementFromArray = <T>(arr: T[]): T => arr[Math.floor(Math.random() * arr.length)]
 
-export const showAvailableLists = () => {
-	const keys = Object.keys(wordlist)
-	console.log(keys)
-	return keys
-}
+export const showAvailableLists = () => Object.keys(wordlist)
 
 export const generate = (format: string = '{character}_{english}', maxReformats = 16): string => {
 	for (let i = 0; i < maxReformats; i++) {
