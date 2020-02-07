@@ -53,6 +53,30 @@ const username = generate('{quantity|age|cats|}')
 
 This example will choose a random word between the `quantity`, `age` and `cats` list.
 
+### ✒️ Use you own lists
+
+You can also add your own lists or owerwrite the built in one.
+
+```typescript
+import { generate } from 'canihazusername'
+
+const gits = ['gitlab', 'github', 'gitea']
+const username = generate('{gits}', { lists: { gits } })
+```
+
+### 🔐 Reformats limit
+
+For security reasons the default limit for the maximum reformats/insertions is set to 16.
+
+If you use more than 16 `{}` you can increase them with the `maxReformats` option.
+
+```typescript
+import { generate } from 'canihazusername'
+
+const username = generate('{1} {2} ... {17}', { maxReformats: 16 }) // ❌ The last one will not be replaced
+const username = generate('{1} {2} ... {17}', { maxReformats: 20 }) // ✅
+```
+
 ## 🗂 Lists
 
 - age
