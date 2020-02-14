@@ -1,6 +1,9 @@
 ![logo](./docs/logo.png)
 
-![minzip size badge](https://badgen.net/bundlephobia/minzip/canihazusername) ![types badge](https://badgen.net/npm/types/canihazusername) ![version badge](https://badgen.net/npm/v/canihazusername)
+![dependencies](https://badgen.net/david/dep/cupcakearmy/canihazusername)
+![types badge](https://badgen.net/npm/types/canihazusername)
+![version badge](https://badgen.net/npm/v/canihazusername)
+![minzip size badge](https://badgen.net/bundlephobia/minzip/canihazusername)
 
 Username generator. Fully typed, simple and customizable. **0 Dependencies**
 
