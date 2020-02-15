@@ -1,0 +1,3 @@
+[submodule "generate/wordlist"]
+	path = generate/wordlist
+	url = https://github.com/imsky/wordlists
