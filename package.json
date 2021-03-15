@@ -1,6 +1,6 @@
 {
   "name": "canihazusername",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "username generator. typed, simple and customizable",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -17,7 +17,7 @@
     "generate": "git submodule update && node ./generate/wordlist.js",
     "docs": "tsc && parcel build --target docs demo/index.html ",
     "docs:dev": "parcel --target docs demo/index.html",
-    "prepublishOnly": "rm -rf ./lib && tsc"
+    "prepublishOnly": "rm -rf ./dist && tsc"
   },
   "repository": {
     "type": "git",
