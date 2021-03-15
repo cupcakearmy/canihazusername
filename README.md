@@ -1,4 +1,4 @@
-![logo](./docs/logo.png)
+![logo](./github/logo.png)
 
 ![dependencies](https://badgen.net/david/dep/cupcakearmy/canihazusername)
 ![types badge](https://badgen.net/npm/types/canihazusername)
@@ -9,11 +9,11 @@ Username generator. Fully typed, simple and customizable. **0 Dependencies**
 
 The lists are taken from [this repo](https://github.com/imsky/wordlists) and automatically converted into json by `./generate/wordlist.js`
 
-## 🕹 [Interactive Demo](https://cupcakearmy.github.io/canihazusername/)
+## 🕹 [Interactive Demo](https://canihazusername.vercel.app/)
 
 Small website where you can see it in action and customize the output.
 
-https://cupcakearmy.github.io/canihazusername/
+https://canihazusername.vercel.app/
 
 ## 🏗 Install
 
