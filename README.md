@@ -1,4 +1,4 @@
-![logo](./github/logo.png)
+![logo](https://github.com/cupcakearmy/canihazusername/raw/master/.github/logo.png)
 
 ![dependencies](https://badgen.net/david/dep/cupcakearmy/canihazusername)
 ![types badge](https://badgen.net/npm/types/canihazusername)
