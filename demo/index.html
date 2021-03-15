@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>canihazusername</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+
+  <body>
+    <main class="w-100 h-100">
+      <div>
+        <h1 class="title is-2"><span>CAN</span>I<span>HAZ</span>USERNAME</h1>
+
+        <div class="content mt-6">
+          <h2>Demo</h2>
+          <input id="format" class="input is-rounded" type="text" placeholder="format" value="{character}_{english}" />
+          <button id="button" class="button is-link is-rounded my-2">👇 Generate 👇</button>
+          <input id="username" class="input is-rounded" type="text" placeholder="" readonly />
+        </div>
+        <div class="content mt-6">
+          <h2>Quickstart</h2>
+          <a target="blank" href="https://github.com/cupcakearmy/canihazusername">
+            <button id="button" class="button is-link is-rounded is-fullwidth mb-3">🔗 Github & Docs 🔗</button>
+          </a>
+          <pre>yarn add canihazusername</pre>
+          <pre>
+import { generate } from 'canihazusername'
+generate('{character}_{english}')</pre
+          >
+        </div>
+        <div class="content">
+          <h5 class="title is-5">Available lists</h5>
+          <p id="lists"></p>
+        </div>
+      </div>
+    </main>
+    <script src="./main.ts"></script>
+  </body>
+</html>

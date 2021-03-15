@@ -7,7 +7,7 @@ const list = window.document.getElementById('lists')
 const button = window.document.getElementById('button')
 
 const calculate = () => {
-    output.value = generate(input.value)
+  output.value = generate(input.value)
 }
 
 // Init

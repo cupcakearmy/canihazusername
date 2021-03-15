@@ -1,14 +1,10 @@
-# Editors
+# General
 .vscode
-.idea
-
-# Node
 node_modules/
-package-lock.json
-yarn.lock
 
 # Build
-lib
 dist
+build
 .cache
-src/*.js
+.parcel-cache
+.vercel
