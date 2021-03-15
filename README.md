@@ -1,6 +1,7 @@
 ![logo](https://github.com/cupcakearmy/canihazusername/raw/master/.github/logo.png)
 
 ![dependencies](https://badgen.net/david/dep/cupcakearmy/canihazusername)
+![downloads badge](https://badgen.net/npm/dt/canihazusername)
 ![types badge](https://badgen.net/npm/types/canihazusername)
 ![version badge](https://badgen.net/npm/v/canihazusername)
 ![minzip size badge](https://badgen.net/bundlephobia/minzip/canihazusername)
