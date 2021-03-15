@@ -15,7 +15,7 @@
   },
   "scripts": {
     "generate": "git submodule update && node ./generate/wordlist.js",
-    "docs": "parcel build --target docs demo/index.html ",
+    "docs": "tsc && parcel build --target docs demo/index.html ",
     "docs:dev": "parcel --target docs demo/index.html",
     "prepublishOnly": "rm -rf ./lib && tsc"
   },
