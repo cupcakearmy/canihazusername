@@ -6,7 +6,7 @@ const DEFAULT_OPTIONS = {
 }
 
 function randomElementFromArray<T>(arr: T[]): T {
-  return arr[Math.floor(Math.random() * arr.length)]
+  return arr[Math.floor(Math.random() * arr.length)]!
 }
 
 export function showAvailableLists(): string[] {
@@ -24,7 +24,9 @@ export function generate(
     const match = /\{.*?\}/.exec(format)
     if (match === null) break
 
-    const keys = match[0]
+    const m0 = match[0]
+    if (!m0) throw new Error('Invalid match')
+    const keys = m0
       .slice(1, -1)
       .split('|')
       .map((key) => key.trim())
@@ -32,7 +34,7 @@ export function generate(
     const lists = keys.map((key) => (Array.isArray(combined[key]) ? combined[key] : []))
     const flattened = lists.reduce((acc, val) => acc.concat(val), [])
     const value: string = flattened.length > 0 ? randomElementFromArray(flattened) : ''
-    format = format.replace(match[0], value)
+    format = format.replace(m0, value)
   }
 
   return format

@@ -1,4 +1,4 @@
-import 'bulma/css/bulma'
+import 'bulma/css/bulma.css'
 import { showAvailableLists, generate } from '../'
 
 const input = window.document.getElementById('format') as HTMLInputElement

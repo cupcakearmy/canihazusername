@@ -1,6 +1,6 @@
 {
   "name": "canihazusername",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "username generator. typed, simple and customizable",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -15,6 +15,8 @@
   },
   "scripts": {
     "generate": "git submodule update && node ./generate/wordlist.js",
+    "dev": "tsc -w",
+    "build": "tsc",
     "docs": "tsc && parcel build --target docs demo/index.html ",
     "docs:dev": "parcel --target docs demo/index.html",
     "prepublishOnly": "rm -rf ./dist && tsc"
@@ -36,9 +38,8 @@
   },
   "homepage": "https://github.com/CupCakeArmy/canihazusername#readme",
   "devDependencies": {
-    "bulma": "^0.9",
-    "parcel": "^2.0.0-nightly.626",
-    "ts-node-dev": "^1",
-    "typescript": "^4"
+    "bulma": "^0.9.3",
+    "parcel": "^2.0.0",
+    "typescript": "^4.4.4"
   }
 }
