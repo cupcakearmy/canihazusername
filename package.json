@@ -1,11 +1,11 @@
 {
   "name": "canihazusername",
-  "version": "2.2.1",
+  "version": "2.2.0",
   "description": "username generator. typed, simple and customizable",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "./dist"
+    "dist"
   ],
   "targets": {
     "docs": {
