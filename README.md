@@ -1,9 +1,10 @@
 ![logo](https://github.com/cupcakearmy/canihazusername/raw/master/.github/logo.png)
 
-![downloads badge](https://badgen.net/npm/dt/canihazusername)
-![types badge](https://badgen.net/npm/types/canihazusername)
 ![version badge](https://badgen.net/npm/v/canihazusername)
+![downloads badge](https://badgen.net/npm/dt/canihazusername)
+![dependency count](https://badgen.net/bundlephobia/dependency-count/canihazusername)
 ![minzip size badge](https://badgen.net/bundlephobia/minzip/canihazusername)
+![types badge](https://badgen.net/npm/types/canihazusername)
 
 Username generator. Fully typed, simple and customizable. **0 Dependencies**
 
