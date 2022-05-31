@@ -3,16 +3,16 @@
   "version": "2.3.2",
   "description": "username generator. typed, simple and customizable",
   "type": "module",
-  "main": "./dist/cjs/index.js",
+  "main": "./dist/cjs/index.cjs",
   "types": "./dist/cjs/index.d.ts",
   "exports": {
     ".": {
       "import": {
-        "default": "./dist/esm/index.js",
+        "default": "./dist/esm/index.mjs",
         "types": "./dist/esm/index.d.ts"
       },
       "require": {
-        "default": "./dist/cjs/index.js",
+        "default": "./dist/cjs/index.cjs",
         "types": "./dist/cjs/index.d.ts"
       }
     }
@@ -29,8 +29,8 @@
   "scripts": {
     "generate": "git submodule update && node ./generate/wordlist.js",
     "dev": "tsc -w",
-    "build:esm": "tsc -p ./tsconfig.esm.json",
-    "build:cjs": "tsc -p ./tsconfig.cjs.json",
+    "build:esm": "tsc -p ./tsconfig.esm.json && mjscjs -p ./tsconfig.esm.json",
+    "build:cjs": "tsc -p ./tsconfig.cjs.json && mjscjs -p ./tsconfig.cjs.json",
     "build": "pnpm run build:esm && pnpm run build:cjs",
     "docs": "pnpm run build && parcel build --target docs demo/index.html",
     "docs:dev": "parcel --target docs demo/index.html",
@@ -54,6 +54,7 @@
   "homepage": "https://github.com/CupCakeArmy/canihazusername#readme",
   "devDependencies": {
     "bulma": "^0.9.4",
+    "mjscjs": "^1.0.9",
     "parcel": "^2.6.0",
     "typescript": "^4.7.2"
   }
