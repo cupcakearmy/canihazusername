@@ -1,5 +1,5 @@
 import 'bulma/css/bulma.css'
-import { showAvailableLists, generate } from '../'
+import { generate, showAvailableLists } from '../'
 
 const input = window.document.getElementById('format') as HTMLInputElement
 const output = window.document.getElementById('username') as HTMLInputElement
