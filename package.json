@@ -1,6 +1,6 @@
 {
   "name": "canihazusername",
-  "version": "2.3.3",
+  "version": "2.3.4",
   "description": "username generator. typed, simple and customizable",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -8,8 +8,8 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     }
   },
