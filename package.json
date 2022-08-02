@@ -1,6 +1,6 @@
 {
   "name": "canihazusername",
-  "version": "2.3.4",
+  "version": "2.3.5",
   "description": "username generator. typed, simple and customizable",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -49,8 +49,8 @@
   "homepage": "https://github.com/CupCakeArmy/canihazusername#readme",
   "devDependencies": {
     "bulma": "^0.9.4",
-    "parcel": "^2.6.0",
-    "tsup": "^6.0.1",
-    "typescript": "^4.7.2"
+    "parcel": "^2.6.2",
+    "tsup": "^6.2.1",
+    "typescript": "^4.7.4"
   }
 }
