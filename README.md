@@ -96,6 +96,7 @@ const username = generate('{1} {2} ... {17}', { maxReformats: 20 }) // ✅
 - construction
 - corporate_prefixes
 - emotions
+- food
 - geometry
 - linguistics
 - materials
@@ -109,8 +110,8 @@ const username = generate('{1} {2} ... {17}', { maxReformats: 20 }) // ✅
 - taste
 - temperature
 - weather
-- blockchain
 - corporate
+- crypto
 - hipster
 - lorem
 - reddit
@@ -118,14 +119,19 @@ const username = generate('{1} {2} ... {17}', { maxReformats: 20 }) // ✅
 - canada
 - city_states
 - france
+- ireland
 - netherlands
+- spain
 - switzerland
 - united_states
 - apple
 - intel
 - microsoft
 - unicorns
+- butlers
+- computing
 - founders
+- fictional
 - usa
 - chicago
 - newyork
@@ -161,7 +167,6 @@ const username = generate('{1} {2} ... {17}', { maxReformats: 20 }) // ✅
 - fast_food
 - filmmaking
 - fish
-- food
 - fortifications
 - fruit
 - furniture
@@ -180,6 +185,7 @@ const username = generate('{1} {2} ... {17}', { maxReformats: 20 }) // ✅
 - military_army
 - military_navy
 - minerals
+- monkeys
 - music_instruments
 - music_production
 - phones
@@ -193,6 +199,8 @@ const username = generate('{1} {2} ... {17}', { maxReformats: 20 }) // ✅
 - seasonings
 - set_theory
 - shopping
+- snakes
+- software
 - spirits
 - sports
 - startups
