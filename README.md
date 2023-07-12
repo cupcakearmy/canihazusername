@@ -19,7 +19,11 @@ https://canihazusername.vercel.app/
 ## 🏗 Install
 
 ```bash
+npm i canihazusername
+
 yarn add canihazusername
+
+pnpm i canihazusername
 ```
 
 ## 🚀 Quickstart
