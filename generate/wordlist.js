@@ -27,13 +27,12 @@ function convertAndSaveWordlistAsJSON() {
       .filter((entry) => entry !== '')
       .map((entry) => entry.trim())
 
-    // Remove duplicates
-    const set = new Set(lines)
-    const name = basename(filename, 'utf-8').slice(0, -4)
+    const set = new Set(lines) // remove duplicates
+    const name = basename(filename, 'utf-8').slice(0, -4) // trim .txt
     wordlist[name] = [...set]
   })
 
-  writeFileSync('./src/wordlist.json', JSON.stringify(wordlist))
+  writeFileSync('./src/wordlist.json', JSON.stringify(wordlist), 'utf-8')
 }
 
 convertAndSaveWordlistAsJSON()

@@ -1,6 +1,6 @@
 {
   "name": "canihazusername",
-  "version": "2.3.6",
+  "version": "2.4.0",
   "description": "username generator. typed, simple and customizable",
   "packageManager": "pnpm@8.6.7",
   "type": "module",
@@ -24,7 +24,7 @@
     }
   },
   "scripts": {
-    "generate": "git submodule update && node ./generate/wordlist.js",
+    "generate": "git submodule update --recursive --remote --init && node ./generate/wordlist.js",
     "dev": "tsc -w",
     "build": "tsup src/index.ts --format cjs,esm --dts --sourcemap",
     "docs": "pnpm run build && parcel build --target docs demo/index.html",
