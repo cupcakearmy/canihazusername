@@ -1,14 +1,13 @@
-const fs = require('fs')
-const path = require('path')
-const util = require('util')
+import { readFileSync, readdirSync, statSync, writeFileSync } from 'fs'
+import { basename, join } from 'path'
 
 const endsWithTxt = /^.*\.txt$/
 
 function walkDir(dir, callback) {
-  fs.readdirSync(dir).forEach((f) => {
-    const dirPath = path.join(dir, f)
-    const isDirectory = fs.statSync(dirPath).isDirectory()
-    isDirectory ? walkDir(dirPath, callback) : callback(path.join(dir, f))
+  readdirSync(dir).forEach((f) => {
+    const dirPath = join(dir, f)
+    const isDirectory = statSync(dirPath).isDirectory()
+    isDirectory ? walkDir(dirPath, callback) : callback(join(dir, f))
   })
 }
 
@@ -20,7 +19,7 @@ function convertAndSaveWordlistAsJSON() {
     if (!endsWithTxt.test(filename)) return
 
     // Read the file
-    const file = fs.readFileSync(filename, 'utf-8')
+    const file = readFileSync(filename, 'utf-8')
 
     // Each line of the file to an array removing the empty lines
     const lines = file
@@ -30,11 +29,11 @@ function convertAndSaveWordlistAsJSON() {
 
     // Remove duplicates
     const set = new Set(lines)
-    const name = path.basename(filename, 'utf-8').slice(0, -4)
+    const name = basename(filename, 'utf-8').slice(0, -4)
     wordlist[name] = [...set]
   })
 
-  fs.writeFileSync('./src/wordlist.json', JSON.stringify(wordlist))
+  writeFileSync('./src/wordlist.json', JSON.stringify(wordlist))
 }
 
 convertAndSaveWordlistAsJSON()
