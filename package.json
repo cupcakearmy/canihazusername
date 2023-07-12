@@ -27,10 +27,10 @@
     "generate": "git submodule update --recursive --remote --init && node ./generate/wordlist.js",
     "dev": "tsc -w",
     "build": "tsup src/index.ts --format cjs,esm --dts --sourcemap",
-    "docs": "pnpm run build && parcel build --target docs demo/index.html",
-    "docs:dev": "parcel --target docs demo/index.html",
+    "docs": "vite build demo --outDir ../build",
+    "docs:dev": "vite demo",
     "prepublishOnly": "rm -rf ./dist && pnpm run build",
-    "clean": "rm -rf ./dist ./build ./.parcel-cache"
+    "clean": "rm -rf ./dist ./build"
   },
   "repository": {
     "type": "git",
@@ -50,8 +50,8 @@
   "homepage": "https://github.com/CupCakeArmy/canihazusername#readme",
   "devDependencies": {
     "bulma": "^0.9.4",
-    "parcel": "^2.9.3",
     "tsup": "^7.1.0",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "vite": "^4.4.3"
   }
 }

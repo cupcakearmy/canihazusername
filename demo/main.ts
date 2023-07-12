@@ -1,16 +1,15 @@
-import 'bulma/css/bulma.css'
-import { generate, showAvailableLists } from '../'
+import { generate, showAvailableLists } from '../src/index'
 
 const input = window.document.getElementById('format') as HTMLInputElement
 const output = window.document.getElementById('username') as HTMLInputElement
 const list = window.document.getElementById('lists')
 const button = window.document.getElementById('button')
 
-const calculate = () => {
+function calculate() {
   output.value = generate(input.value)
 }
 
 // Init
-button.addEventListener('click', calculate)
+button?.addEventListener('click', calculate)
 calculate()
-list.innerHTML = showAvailableLists().join(', ')
+if (list) list.innerHTML = showAvailableLists().join(', ')
