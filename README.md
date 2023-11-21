@@ -1,4 +1,4 @@
-![logo](https://github.com/cupcakearmy/canihazusername/raw/master/.github/logo.png)
+![logo](https://github.com/cupcakearmy/canihazusername/raw/main/.github/logo.png)
 
 ![version badge](https://badgen.net/npm/v/canihazusername)
 ![downloads badge](https://badgen.net/npm/dt/canihazusername)
